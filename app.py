@@ -62,18 +62,7 @@ def safe_check_fitted(model):
         return False, str(e)
 
 
-# -------------------------
-# Show debug info (useful while deploying)
-# -------------------------
-st.markdown("## Debug: runtime environment (visible during development)")
-st.write("Working directory:", os.getcwd())
-st.write("Top-level files and folders:")
-for f in sorted(os.listdir(".")):
-    st.write("-", f)
 
-st.write("Candidate model paths existence:")
-for p in CANDIDATE_PATHS:
-    st.write(f"- {p} -> {os.path.exists(p)}")
 
 # -------------------------
 # Ensure model exists (or download if configured)
