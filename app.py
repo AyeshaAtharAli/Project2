@@ -234,7 +234,4 @@ if submit:
 # Footer / Tips
 # -------------------------
 st.markdown("---")
-st.caption(
-    "Notes: If the model file isn't in this repo root, either move it here or update CANDIDATE_PATHS. "
-    "If the model file is >100 MB, GitHub may reject it—use Git LFS or host the file and set MODEL_URL."
-)
+
