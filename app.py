@@ -103,7 +103,7 @@ if not fitted:
     st.write("check_is_fitted() error:", fit_err)
     st.stop()
 
-st.success("Model loaded and verified as fitted.")
+# st.success("Model loaded and verified as fitted.")
 
 # -------------------------
 # Application UI
